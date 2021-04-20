@@ -50,7 +50,7 @@ public class AtmServiceImpl implements AtmService {
 			message = String.format("You can only retrieve $%.2f at a time.", MAX_AMOUNT_TO_RETRIEVE);
 			return new TransactionResult(succeeded, message, retrieved);
 		}
-		if(amount < acc.getTotalSavings()) {
+		if(amount > acc.getTotalSavings()) {
 			message = "Insuficient funds.";
 			return new TransactionResult(succeeded, message, retrieved);
 		}

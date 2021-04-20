@@ -4,15 +4,6 @@
   <artifactId>ATM</artifactId>
   <version>0.0.1-SNAPSHOT</version>
   
-  <dependencies>
-  	<dependency>
-      <groupId>org.jasypt</groupId>
-      <artifactId>jasypt</artifactId>
-      <version>1.9.3</version>
-      <scope>compile</scope>
-    </dependency>
-  </dependencies>
-  
   <build>
     <sourceDirectory>src</sourceDirectory>
     <plugins>
